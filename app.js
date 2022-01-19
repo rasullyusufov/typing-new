@@ -25,7 +25,7 @@ if(navigator.onLine == true){
     scoreEl.textContent = `Score ${score}`
 }reload()
 form.addEventListener('input' , (e)=>{
-    typed = inputEl.value
+    typed = inputEl.value.toLowerCase()
     e.preventDefault()
   if(typed == word){
    reload()
