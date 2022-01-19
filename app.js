@@ -13,7 +13,7 @@ let score = 0
 
 if(navigator.onLine == true){
     function reload(){
-    fetch(`https://random-word-api.herokuapp.com/word?number=1`).then(function(datas){
+    fetch(`https://random-word-api.herokuapp.com/word`).then(function(datas){
         return datas.json()
     }).then(getdata)
     function getdata(data){
