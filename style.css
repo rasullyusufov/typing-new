@@ -40,6 +40,30 @@ body {
             flex-direction: column;
     background-color: #444444;
 }
+.section {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+.select {
+    color: #E1E8EB;
+    width: 100px;
+    border: none;
+    border-radius: 7px;
+    background-color: #444444;
+    outline: none;
+}
+
 
 .form {
     width: 90%;
@@ -70,10 +94,21 @@ body {
         -ms-user-select: none;
             user-select: none;
 }
-.time {
-    margin-top: 50px;
-}
 .score {
     text-align: center;
-    margin: 10px;
+    margin: 30px;
+    
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
 }
